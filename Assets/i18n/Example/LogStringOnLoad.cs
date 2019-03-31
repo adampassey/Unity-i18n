@@ -8,7 +8,7 @@ namespace i18n {
 
         // Start is called before the first frame update
         void Start() {
-            Invoke("LogTestString", 1f);
+            LogTestString();
         }
 
         public void LogTestString() {
