@@ -9,6 +9,7 @@ namespace i18n {
 
         public string LangDirectory = "Lang";
         public string DefaultLang = "en-US";
+        public bool LoadByDefault = true;
 
         [System.Serializable]
         private class LocalizationData {
@@ -23,7 +24,9 @@ namespace i18n {
 
         // Start is called before the first frame update
         void Start() {
-            Load(DefaultLang, LangDirectory);
+            if (LoadByDefault) {
+                Load(DefaultLang, LangDirectory);
+            }
         }
 
         public void Load(string lang, string directory) {
