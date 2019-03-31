@@ -1,0 +1,16 @@
+﻿{
+	"strings": [
+		{
+			"key": "someKey",
+			"value": "This is some value"
+		},
+		{
+			"key": "hello",
+			"value": "Hello, {0}"
+		},
+		{
+			"key": "introduction",
+			"value": "Hello, {0}, how are you {1}?"
+		}
+	]
+}
